@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<meta name="description" content="Portfolio web design">
+<meta name="keywords" content="HTML,JavaScript,Portfolio,Design,layout,Orange,commisions">
+<meta name="author" content="bailec11"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
+<style>
+     * {
+        margin: 0;
+        padding: 0;
+    } @font-face {
+        font-family: Candara;
+        src: url("Candara.ttf");
+	 } body {
+        background-image: url("backgroundorange.PNG")
+    } h1 {
+        font: 48pt/1.4em Sekuya;
+        text-align: center;
+        text-shadow: 1px 2px 3px rgba(0,176,173,1.00);
+        margin: 24px 0;
+    } #textbox {
+        width: 1000px;
+        height: 928px;
+        margin: 0 auto;
+        background: #FFB97E;
+        box-shadow: 2px 3px 6px #D3FFAC;
+        border: 10px solid white;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start; 
+		align-content: flex-start; 
+		flex-wrap: wrap;
+    } figure {
+        margin: 26px;
+        width: 200px;
+        text-align: center;
+    } img, .zoom {
+        width: 200px;
+        height: 200px;
+        border: 1px solid white;
+        box-shadow: 2px 3px 6px #D3FFAC;
+        transition: transform 0.5s;
+    } figcaption {
+        font: 12pt/1.4em Georgia;
+        margin-top: 3px;
+    } .zoom {
+        background-size: 100%;
+        background-position: center;
+    } img:hover {
+        transform: scale(1.03);
+        transition: transform 0.5s;
+    } .zoom:hover {
+        background-size: 105%;
+        transition: background-size 0.5s;
+    }  button {
+        width: 100px;
+        height: 40px;
+        background: lightgreen;
+        border-radius: 6px;
+        display: block;
+        margin: 24px auto;
+    } 
+</style>
+<script language="javascript" type="text/javascript">
+	function printPage() { 
+		window.print();
+	}
+</script>
+</head>
+
+<body>
+    <h1>Portfolio!</h1>
+    <div id="textbox">
+        <!-- Leaves photo -->
+        <figure>
+			<a href="IMG_0998.png">
+            <img src="thumb-daisy.png" />
+            </a>
+            <figcaption>
+            Princess Daisy artwork for contest
+            </figcaption>
+        </figure>
+		 <figure>
+			<a href="IMG_6975.png">
+            <img src="splashin-logo.png" />
+            </a>
+            <figcaption>
+            Soda brand logo
+            </figcaption>
+        </figure>
+		 <figure>
+			<a href="IMG_6976.png">
+            <img src="thumb-poster.png" />
+            </a>
+            <figcaption>
+            Music tour poster for factitious band
+            </figcaption>
+        </figure> 
+		 <figure>
+			<a href="Amy.PNG">
+            <img src="Amy-thumb.png" />
+            </a>
+            <figcaption>
+            Amy Rose artwork
+            </figcaption>
+        </figure>
+		 <figure>
+			<a href="green.png">
+            <img src="green thumb.png" />
+            </a>
+            <figcaption>
+            Commissioned character piece 
+            </figcaption>
+        </figure>
+		 <figure>
+			<a href="bloss.PNG">
+            <img src="bloss thumb.png" />
+            </a>
+            <figcaption>
+            Teen Blossom concept design
+            </figcaption>
+        </figure>
+    </div> 
+</body> 
+<body>
+    <div id="page">
+        <button onClick="printPage()">Print Page</button>
+    </div>
+</body>
+</html>

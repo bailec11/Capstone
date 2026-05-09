@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<meta name="description" content="Portfolio web design">
+<meta name="keywords" content="HTML,JavaScript,Portfolio,Design,layout,Orange,commisions">
+<meta name="author" content="bailec11"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
+<title>forms</title>
+<style>
+    @font-face {
+        font-family: Candara;
+        src: url("Candara.ttf");
+	} body {
+        background-image: url("backgroundorange.PNG")
+    } h1 {
+        text-align: center;
+        font-weight: normal;
+    } form {
+        width: 600px;
+        min-height: 600px;
+        padding: 24px;
+        background:#FFB97E;
+        margin: 36px auto;
+        border: 1px solid #FFB97E;
+        box-shadow: 2px 3px 6px #D3FFAC;
+        border-radius: 17px;
+        font: 14pt/1.2em Candara;
+    } fieldset {
+        margin-top: 18px;
+    } #personal input, #submit {
+        width: 100%;
+        height: 24px;
+        margin-bottom: 12px;
+	} input[type="text"] { 
+		width: 98%;
+		font: 14pt/1.4em Candara; 
+		margin-top: 6px;
+	} input[type="submit"] {
+		width: 100px;
+		height: 40px;
+		background: lightgreen;
+		margin: 6px autoa;
+		display: block;
+		border-radius: 6px;
+		border: 1px solid #D3FFAC;
+		font: 14pt/1.4em Candara;
+	}
+</style>
+<script language="JavaScript">
+    function toggle(source) {
+        checkboxes = document.getElementsByName('foo');
+        for(var checkbox in checkboxes)
+        checkboxes[checkbox].checked = source.checked;
+    }
+</script>
+</head>
+
+<body>
+    <form action="#" method="post">
+    <h1>Contact Me!</h1>
+	<input type="text"/><br/>
+	<label>First name</label><br/> 
+	<input type="text" /><br/>
+	<label>Last name</label><br/>
+	<fieldset>
+	<legend>Reasoning for contacting us</legend>
+	<input type="radio" name="service">
+	<label>Commission</label><br/> 
+	<input type="radio" name="service">
+	<label>Discuss design</label><br/>
+	<input type="radio" name="service">
+	<label>Price ranges</label><br/>
+	<input type="radio" name="service">
+	<label>Other</label><br/>
+	</fieldset>	
+	<fieldset> 
+	<legend>Socials</legend>
+	<input type="checkbox" name="foo">
+	<label>Discord</label><br/> 
+	<input type="checkbox" name="foo"> 
+	<label>Twitter</label><br/>
+	<input type="checkbox" name="foo">
+	<label>Instagram</label><br/>
+	<input type="checkbox" name="foo">
+	<label>Facebook</label><br/>
+	<input type="checkbox" name="foo"> 
+	<label>None of these</label><br/>
+	<input type="checkbox" onClick="toggle(this)">
+	<label>All of these</label><br/> 
+	</fieldset>	
+	<fieldset>  
+	<legend>Availability</legend> 
+	<select>
+		<option>This week</option>
+		<option>Next week</option> 
+		<option>Next month</option>
+	</select> 
+	</fieldset>	
+	<fieldset>   
+	<label>Message</label><br/>
+	<textarea rows="5" cols="66">
+	</textarea> 
+	<input type="submit" />
+    </form>
+</body>
+</html>
